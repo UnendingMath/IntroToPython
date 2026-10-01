@@ -52,17 +52,35 @@
 
 # Coercion
 
-print(int('5'))
-print(float('3.141592'))
+# print(int('5'))
+# print(float('3.141592'))
 
-print(str(5))
-print(str(3.141592))
+# print(str(5))
+# print(str(3.141592))
 
-## (Unnecessary) Coercion with 'str'
-print(str(False))
-print(str([1, 2, 3]))
+# ## (Unnecessary) Coercion with 'str'
+# print(str(False))
+# print(str([1, 2, 3]))
 
-## Implicit Coercion
-print(False)
-print([1, 2, 3])
-print({4, 5, 6})
+# ## Implicit Coercion
+# print(False)
+# print([1, 2, 3])
+# print({4, 5, 6})
+
+
+# # Determining Types
+
+# print(type('test') is str)
+
+# print(type([1, 2, 3]).__name__)
+
+# # String Representation
+
+# my_str = 'abc'
+# print(my_str)
+# print(str(my_str))
+# print(repr(my_str))
+
+# Collection and String Lengths
+
+print(len('Launch School'))
