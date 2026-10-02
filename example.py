@@ -81,6 +81,63 @@
 # print(str(my_str))
 # print(repr(my_str))
 
-# Collection and String Lengths
+# # Collection and String Lengths
 
-print(len('Launch School'))
+# print(len('Launch School'))
+
+# # Variables and Variable Names
+
+# answer = 41
+# print(answer)
+# answer = 42
+# print(answer)
+
+# # Naming Conventions
+
+# variable_to_be_used = 12
+# CONSTANT_NUMBER = 14
+# # Classes: PascalCase/CamelCase
+
+# # Creating and Reassigning Variables
+# forename = 'Clare'
+# forename = 'Victor'
+
+# foo = 'abcdefghi'
+# foo = 'hello'
+# Python creates the string in a memory address; another memory address represents the variable, whose value is the address of the object
+
+foo = 42
+foo = foo - 2
+foo = foo * 3
+foo = foo + 5
+foo = foo // 25
+foo = foo / 2
+foo = foo**3
+print(foo)
+
+# Augmented Assignment
+
+foo = 42
+foo -= 2
+foo *= 3
+foo += 5
+foo //= 25
+foo /= 2
+foo **= 3
+
+print(foo)
+
+bar = 'xyz'
+bar += 'abc'
+bar *= 2
+print(bar)
+
+bar = [1, 2, 3]
+bar += [4, 5]
+print(bar)
+
+bar = {1, 2, 3}
+bar |= {2, 3, 4, 5}
+
+bar -= {2, 4}
+print(bar)
