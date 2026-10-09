@@ -106,38 +106,60 @@
 # foo = 'hello'
 # Python creates the string in a memory address; another memory address represents the variable, whose value is the address of the object
 
-foo = 42
-foo = foo - 2
-foo = foo * 3
-foo = foo + 5
-foo = foo // 25
-foo = foo / 2
-foo = foo**3
-print(foo)
+# foo = 42
+# foo = foo - 2
+# foo = foo * 3
+# foo = foo + 5
+# foo = foo // 25
+# foo = foo / 2
+# foo = foo**3
+# print(foo)
 
-# Augmented Assignment
+# # Augmented Assignment
 
-foo = 42
-foo -= 2
-foo *= 3
-foo += 5
-foo //= 25
-foo /= 2
-foo **= 3
+# foo = 42
+# foo -= 2
+# foo *= 3
+# foo += 5
+# foo //= 25
+# foo /= 2
+# foo **= 3
 
-print(foo)
+# print(foo)
 
-bar = 'xyz'
-bar += 'abc'
-bar *= 2
-print(bar)
+# bar = 'xyz'
+# bar += 'abc'
+# bar *= 2
+# print(bar)
 
-bar = [1, 2, 3]
-bar += [4, 5]
-print(bar)
+# bar = [1, 2, 3]
+# bar += [4, 5]
+# print(bar)
 
-bar = {1, 2, 3}
-bar |= {2, 3, 4, 5}
+# bar = {1, 2, 3}
+# bar |= {2, 3, 4, 5}
 
-bar -= {2, 4}
-print(bar)
+# bar -= {2, 4}
+# print(bar)
+
+# # Calling Functions
+
+# def hello():
+#     print('Hello')
+#     return True
+
+# hello()
+# print(hello())
+
+# print(print())
+
+# print("hello", "goodbye", "farewell", sep=' | ', end='!\n')
+
+# print(
+#     'Hello',
+#     'goodbye',
+#     'farwell',
+#     'adios',
+#     'ciao',
+#     'auf wiedersehen',
+# )
