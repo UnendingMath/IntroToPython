@@ -129,41 +129,73 @@ people_phones = {
 # #     ('Clare', '555-6666')
 # # ])
 
-# If we remove, update, or add a new key/value pair, the corresponding view objects are updated immediately
+# # If we remove, update, or add a new key/value pair, the corresponding view objects are updated immediately
 
-keys = people_phones.keys()
-values = people_phones.values()
+# keys = people_phones.keys()
+# values = people_phones.values()
 
-print(keys)
-print(values)
+# print(keys)
+# print(values)
 
-people_phones['Max'] = '123-4567'
-people_phones['Pete'] = '345-6789'
-del people_phones['Chris']
+# people_phones['Max'] = '123-4567'
+# people_phones['Pete'] = '345-6789'
+# del people_phones['Chris']
 
-print(keys)
-print(values)
+# print(keys)
+# print(values)
 
-# Mutating Methods
+# # Mutating Methods
 
-example = [1, 2, 3]
+# example = [1, 2, 3]
 
-example.append(4) # adds the integer 4 at the end of the list.
-print(example)
-example.insert(2, 2.5) # inserts the flost 2.5 before the current 2nd index. 
-# If the index is higher than the list length, it will place it in the last position. Can use negative indexing.
-print(example)
-example.extend([5, 6, 7]) # Adds an iterable to the end of the iterable calling the method.
-print(example)
+# example.append(4) # adds the integer 4 at the end of the list.
+# print(example)
+# example.insert(2, 2.5) # inserts the flost 2.5 before the current 2nd index. 
+# # If the index is higher than the list length, it will place it in the last position. Can use negative indexing.
+# print(example)
+# example.extend([5, 6, 7]) # Adds an iterable to the end of the iterable calling the method.
+# print(example)
 
-example.remove(4) # Removes the element 4 if it exists. If not, a ValueError is raised. 
-print(example)
+# example.remove(4) # Removes the element 4 if it exists. If not, a ValueError is raised. 
+# print(example)
 
-example.pop(2) # Removes and returns an indexed element from a mutable sequence
-# If no index is given, it removes the last element in the sequence. It raises an error if the index is out of range.
-print(example)
+# example.pop(2) # Removes and returns an indexed element from a mutable sequence
+# # If no index is given, it removes the last element in the sequence. It raises an error if the index is out of range.
+# print(example)
 
-example.clear()
-print(example)
+# example.clear()
+# print(example)
 
+# names = ('Grace', 'Clare', 'Allison', 'Trevor')
+# reversed_names = reversed(names) # Reversed function returns a lazy sequence that contains the elements of the elements/keys
+# # Since the result is lazy, we need to iterate over the result or expand it with a function like list or tuple
+# print(tuple(reversed_names))
+# print(names)
 
+# names = list(names)
+# names.reverse() # list.reverse() method mutates the caller. We should use when we do not want to preserve the original order.
+# print(names)
+
+# my_dict = {'abc': 1, 
+#            'xyz': 2,
+#            'pqr': 3,
+#            'jkl': 5,
+#            }
+# reversed_dict = reversed(my_dict) # For dictionaries, it reverses the order of the keys
+# print(list(reversed_dict))
+
+names = ('Grace', 'Clare', 'Allison', 'Trevor')
+for name in reversed(names):
+    print(names)
+# Trevor
+# Allisob
+# Clare
+# Grace
+
+# String Operations
+
+print("hello world!".capitalize()) # str.capitalize puts the first character of the string as an uppercase, and lowercase for the following characters.
+print("hello world!".title()) # str.title capitalizes the first character of every word (watch for apostrophes and quotations)
+print("hello world!".swapcase()) # str.swapcase flips the uppercases and lowercases in the calling string
+lists = ['a']
+lists.remove()
